@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useCart } from "../../context";
-import productImg  from "../../assets/images/hero.avif"
+
 import {Rating} from "./Rating.js"
 import { useState, useEffect } from "react";
 export const ProductCard = ({product}) => {
