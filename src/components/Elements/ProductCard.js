@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 import { useCart } from "../../context";
-import productImg  from "../../assets/images/hero.avif"
+
 import {Rating} from "./Rating.js"
 import { useState, useEffect } from "react";
 export const ProductCard = ({product}) => {
     const { cartList, addToCart, removeFromCart} = useCart();
     const [ inCart , setIncart ] = useState(false);
-    const {id,name, overview,poster,rating,price,long_description,best_seller}= product;
+    const {id,name, overview,poster,rating,price,best_seller}= product;
     useEffect(()=>{
             const productInCart =  cartList.find(item => item.id === product.id);
 
