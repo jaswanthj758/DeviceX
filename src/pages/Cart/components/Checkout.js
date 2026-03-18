@@ -26,7 +26,7 @@ export const Checkout = ({setCheckout}) => {
         }
         getUser();
 
-    },[])
+    },[cbid,token])
 
     async function handleOrderSubmit( event ){
         event.preventDefault();

@@ -78,8 +78,6 @@
       "size": 15,
       "best_seller": true
     },
-   
-   
     {
       "id": 10010,
       "name": "Nothing Phone (2)",
@@ -106,7 +104,6 @@
       "size": 20,
       "best_seller": true
     },
-     
     {
       "id": 10020,
       "name": "Infinix Zero 30",
@@ -148,7 +145,7 @@
       "size": 15,
       "best_seller": true
     },
-     {
+    {
       "id": 10011,
       "name": "Google Pixel 8",
       "overview": "AI-powered smartphone with best-in-class camera.",
@@ -163,9 +160,34 @@
     }
   ],
   "orders": [
-    
+    {
+      "cartList": [
+        {
+          "id": 10002,
+          "name": "Samsung Galaxy S24",
+          "overview": "Flagship Samsung phone with AI features and powerful Snapdragon processor.",
+          "long_description": "The Samsung Galaxy S24 comes with advanced AI capabilities, a high-performance Snapdragon processor, and a stunning AMOLED display. It delivers excellent camera quality, long battery life, and premium design suitable for everyday and professional use.",
+          "price": 74999,
+          "poster": "/assets/images/s24.png",
+          "image_local": "/assets/images/10002.avif",
+          "rating": 5,
+          "in_stock": true,
+          "size": 15,
+          "best_seller": true
+        }
+      ],
+      "amount_Paid": 74999,
+      "quantity": 1,
+      "user": {},
+      "id": 1
+    }
   ],
   "users": [
-    
+    {
+      "email": "jaswanth@gmail.com",
+      "password": "$2a$10$A7np3PBgce0lGWHg8c6HMuWb20wuTAlS8Jxczoy/qOvKvYFZ3BkKW",
+      "name": "jaswanth",
+      "id": 1
+    }
   ]
 }
