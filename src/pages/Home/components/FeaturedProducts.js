@@ -15,7 +15,7 @@ export const FeaturedProducts = () => {
    <main> 
     <section className="bg-white dark:bg-gray-900  justify-between items-center mx-auto max-w-screen-xl ">
         <h1 className="text-2xl text-center font-semibold dark:text-slate-100 mb-5 underline underline-offset-8">Featured eBooks</h1>    
-        <div className="flex flex-wrap justify-center lg:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-3  max-w-[1250px] mx-auto">
             {
               products.map((product)=>(
                   <ProductCard product={product}/>

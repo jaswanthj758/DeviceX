@@ -32,14 +32,14 @@ export const Header = () => {
                 </Link>
                 <div className="flex items-center relative">
                     <span onClick={()=>(setDarkMode(!darkMode))} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-gear-wide-connected"></span>
-                    <Link to="/products"><span onClick={()=>(setSearchSection(!searchSection))} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-search"></span></Link>
+                    <Link to="/products"><span onClick={()=>{setSearchSection(!searchSection); setDropdown(false)}} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-search"></span></Link>
                     <Link to="/cart" className="text-gray-700 dark:text-white mr-5">
-                    <span className="text-2xl bi bi-cart-fill relative">
-                        <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">{cartList.length}</span>
+                    <span onClick={()=>{setSearchSection(false);setDropdown(false)}} className="text-2xl bi bi-cart-fill relative">
+                        <span onClick={()=>(setSearchSection(false))}  className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">{cartList.length}</span>
                     </span>                    
                     </Link>
-                    <span onClick={()=>{ setDropdown(!dropdown)}}   className="bi bi-person-circle cursor-pointer text-2xl text-gray-700 dark:text-white"></span>
-                     {dropdown && ( token ? < DropdownLoggedIn  setDropdown={setDropdown}/>: < DropdownLoggedOut  setDropdown={setDropdown}/>) }
+                    <span onClick={()=>{setDropdown(!dropdown); setSearchSection(false)}}   className="bi bi-person-circle cursor-pointer text-2xl text-gray-700 dark:text-white"></span>
+                     {dropdown && ( token ? < DropdownLoggedIn  setDropdown={setDropdown}/>: < DropdownLoggedOut  setDropdown={setDropdown}/>) } 
                 </div>
             </div>
         </nav>
