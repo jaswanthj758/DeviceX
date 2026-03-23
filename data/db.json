@@ -188,6 +188,12 @@
       "password": "$2a$10$A7np3PBgce0lGWHg8c6HMuWb20wuTAlS8Jxczoy/qOvKvYFZ3BkKW",
       "name": "jaswanth",
       "id": 1
+    },
+    {
+      "email": "tarun@gmail.com",
+      "password": "$2a$10$SWQdQZZJV497e7a2l2ixPebhXUW6QF2ebhH.XkkH53e8T6DfxIS8C",
+      "name": "tarun",
+      "id": 2
     }
   ]
 }
