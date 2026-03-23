@@ -16,7 +16,7 @@ export const Checkout = ({setCheckout}) => {
         const cbid = JSON.parse(sessionStorage.getItem("cbid"));
     useEffect(()=>{
         async function getUser(){
-            const response = await fetch (`http://localhost:3000/600/users/${cbid}`,{
+            const response = await fetch (`{process.env.REACT_APP_HOST}/600/users/${cbid}`,{
                 method: "GET",
                 headers : { "Content-Type": "application/json",
                      Authorization : `Bearer ${token}`}

@@ -23,7 +23,7 @@ export const ProductsList = () => {
   
       }
       featureProducts();
-    },[searchTerm, initialProductList])
+    },[searchTerm])
   return (
     <main>
         <section className="my-20 bg-white dark:bg-gray-900">
