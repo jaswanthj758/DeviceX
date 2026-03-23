@@ -13,7 +13,7 @@ export const ProductsList = () => {
   console.log(search)  
   const searchTerm = new URLSearchParams(search).get("q"); 
   console.log(searchTerm)
-  
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(()=>{ 
       async function featureProducts(){
         const response = await fetch(`${process.env.REACT_APP_HOST}/products?name_like=${searchTerm ? searchTerm : ""}`);
