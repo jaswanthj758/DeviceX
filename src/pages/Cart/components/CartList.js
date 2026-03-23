@@ -10,8 +10,8 @@ export const  CartList = () => {
     useTitle(`cart (${cartList.length})`)
 
   return (
-    <>
-      <section className="my-20">
+    <main className="min-h-[calc(100vh-100git px)]" >
+      <section className="my-20 ">
         <p className="text-2xl text-center font-semibold dark:text-slate-100 my-10 underline underline-offset-8">
           My Cart ({cartList.length})
         </p>
@@ -40,7 +40,7 @@ export const  CartList = () => {
       </section>
       {checkout && <Checkout setCheckout={setCheckout}/> } 
       
-    </>
+    </main>
   )
 }
 

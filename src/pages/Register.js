@@ -27,9 +27,9 @@ export const Register = () => {
         
     }
   return (
-    <main>
-      <section>
-        <p className="text-2xl text-center font-semibold dark:text-slate-100 my-16 underline underline-offset-8">Register</p>
+    <main className='min-h-[calc(100vh-89px)]'>
+      <section >
+        <p className="text-2xl text-center font-semibold dark:text-slate-100 my-16 underline underline-offset-8 ">Register</p>
       </section>
         <form onSubmit={handleRegister}>
         <div className="mb-6">
