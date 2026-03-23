@@ -49,9 +49,7 @@ export const CartProvider = ({children}) =>{
         })
     }
 
-    function updatePrice(){
-          
-    }
+    
 
     const value ={
         cartList : state.cartList  ,
