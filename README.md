@@ -1,3 +1,7 @@
+Every first run this command in the terminal to get the node packages
+
+  npm install
+ 
  Most important create .env folder in the root folder then add this 
 
     REACT_APP_HOST=http://localhost:3000
